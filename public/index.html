@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <!-- Alpine.js -->
+<script src="//unpkg.com/alpinejs" defer></script>
+<!-- Meta Tags for Homepage -->
+<title>Verified Hyderabad Companionship | Monika Escort</title>
+<meta name="description" content="Trusted, legal, and emotionally intelligent companionship in Hyderabad. Book secure, elegant experiences with 100% verified companions.">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Verified Hyderabad Companionship | Monika Escort">
+<meta property="og:description" content="Trusted, legal, and emotionally intelligent companionship in Hyderabad. Book secure, elegant experiences with 100% verified companions.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://monikabansalescorts.com/">
+<meta property="og:image" content="https://monikabansalescorts.com/images/monika-profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+</head>
+<body>
+<!-- PHANTOM NAV WITH MOBILE MENU -->
+<nav x-data="{ open: false }" class="fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] md:w-[90%] backdrop-blur-md bg-white/5 border border-white/10 rounded-3xl shadow-2xl ring-1 ring-pink-500/10 px-6 py-3 flex justify-between items-center transition-all duration-300 hover:ring-pink-500/30">
+
+  <!-- Logo -->
+  <a href="/" class="text-xl md:text-2xl font-black tracking-wide text-white">
+    <span class="text-pink-500">Monika</span><span class="opacity-80">Escort</span>
+  </a>
+
+  <!-- Desktop Links -->
+  <div class="hidden md:flex gap-8 text-sm text-white/90 tracking-widest">
+    <a href="/" class="hover:text-pink-400 transition-all">About</a>
+    <a href="/" class="hover:text-pink-400 transition-all">Profiles</a>
+    <a href="/" class="hover:text-pink-400 transition-all">Flow</a>
+    <a href="/" class="hover:text-pink-400 transition-all">FAQ</a>
+    <a href="/" class="hover:text-pink-400 transition-all">Talk</a>
+  </div>
+
+  <!-- CTA (hidden on small screens, appears in mobile menu) -->
+  <a href="https://wa.me/919748355971" class="hidden md:inline bg-pink-600 hover:bg-pink-700 text-white px-5 py-2 rounded-full shadow-lg transition-all">
+    ✦ Book Now
+  </a>
+
+  <!-- Hamburger -->
+  <button @click="open = !open" class="md:hidden text-white focus:outline-none">
+    <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+  <!-- Mobile Menu Fixed + Z-index + Shadow -->
+<div x-show="open" x-transition
+     class="fixed top-[80px] left-4 right-4 z-[9999] bg-[#111]/95 text-white rounded-2xl p-6 shadow-2xl backdrop-blur-xl space-y-5 text-center border border-white/10 ring-1 ring-white/10">
+
+  <a href="about.html" @click="open = false" class="block hover:text-pink-400 transition">About</a>
+  <a href="/" @click="open = false" class="block hover:text-pink-400 transition">Profiles</a>
+  <a href="/" @click="open = false" class="block hover:text-pink-400 transition">Flow</a>
+  <a href="/" @click="open = false" class="block hover:text-pink-400 transition">FAQ</a>
+  <a href="/" @click="open = false" class="block hover:text-pink-400 transition">Talk</a>
+
+  <a href="https://wa.me/919748355971" @click="open = false"
+     class="mt-4 inline-block bg-pink-600 hover:bg-pink-700 text-white px-6 py-2 rounded-full shadow-lg transition">
+    ✦ Book Privately
+  </a>
+</div>
+</nav>
+     <section class="relative bg-gradient-to-br from-black via-zinc-900 to-neutral-900 text-white py-24 px-6 md:px-12 lg:px-24 overflow-hidden">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 items-center gap-16">
+
+    <!-- Text Block -->
+    <div class="space-y-8">
+      <h1 class="text-4xl md:text-5xl font-black tracking-tight leading-tight">
+        <span class="text-pink-600">Trusted</span> Hyderabad <br />Companionship Services <br />Since <span class="text-pink-600">2021</span>
+      </h1>
+      <p class="text-zinc-300 text-lg md:text-xl leading-relaxed">
+        Safe. Verified. Emotionally intelligent. Experience meaningful social companionship in Hyderabad’s most iconic neighborhoods—from Banjara Hills to Hitech City—with companions you can trust.
+      </p>
+      <div class="flex gap-4 pt-4">
+        <button class="px-6 py-3 bg-white hover:text-pink-700 text-pink-500 font-semibold rounded-full shadow-lg hover:shadow-pink-500/50 transition">
+          💖 Book Now
+        </button>
+        <button class="px-6 py-3 border-2 border-zinc-400 hover:border-pink-400 text-white font-semibold rounded-full hover:bg-white hover:text-pink-500 transition">
+          Learn More
+        </button>
+      </div>
+    </div>
+
+    <!-- Glam Image Block -->
+    <div x-data="{ show: false }" x-init="setTimeout(() => show = true, 200)">
+      <div x-show="show" class="relative w-full max-w-md mx-auto rounded-3xl overflow-hidden bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl hover:scale-105 transition duration-500">
+        <img src="./Images/image (80).webp" alt="Elegant Companion" class="w-full object-cover rounded-3xl" />
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="bg-zinc-950 text-white py-24 px-6 md:px-12 lg:px-24">
+  <div class="max-w-6xl mx-auto space-y-12">
+
+    <!-- Section Heading -->
+    <div class="text-center space-y-6">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-pink-600 tracking-tight">
+        Why Choose Monika Escort?
+      </h2>
+      <p class="text-xl md:text-2xl font-medium text-zinc-200">
+        Hyderabad’s Most Trusted Companion Platform
+      </p>
+    </div>
+
+    <!-- Section Body -->
+    <div class="text-lg text-zinc-300 leading-relaxed space-y-6 max-w-3xl mx-auto">
+      <p>
+        In a world where discretion, emotional depth, and safety are often overlooked,
+        <span class="text-white font-semibold">Monika Escort</span> redefines what it means to engage in professional companionship.
+        Since 2021, we’ve served Hyderabad’s elite and discerning individuals with a platform rooted in
+        <span class="text-pink-400 font-semibold">transparency, empathy,</span> and above all, <span class="text-pink-400 font-semibold">trust</span>.
+        We’re not a listing site—we're a <span class="italic">privately curated experience</span>.
+      </p>
+
+      <p>
+        Whether you’re attending a conference in Hitech City, planning a rooftop dinner in Jubilee Hills,
+        or strolling along Hyderabad’s lakeside serenity, our companions are emotionally intelligent professionals—
+        trained in hospitality, conversation, and graceful social presence.
+      </p>
+
+      <p>
+        They’re matched to you not just by schedule, but by shared <span class="underline decoration-pink-500">values</span> and
+        <span class="underline decoration-pink-500">energy</span>.
+      </p>
+    </div>
+
+    <!-- Promise List -->
+    <div class="grid md:grid-cols-2 gap-10 text-zinc-200 mt-12">
+      <div class="space-y-4">
+        <h3 class="text-xl font-semibold text-pink-400">Our Promise:</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li><span class="text-white font-medium">100% Verified Profiles:</span> Police-verified, ID-confirmed, and personally interviewed. No anonymous listings.</li>
+          <li><span class="text-white font-medium">Lawful, Respectful, Non-Sexual:</span> Monika Escort is a legal social companionship service. No illegal activity tolerated.</li>
+        </ul>
+      </div>
+      <div class="space-y-4">
+        <ul class="list-disc list-inside space-y-2 mt-8 md:mt-10">
+          <li><span class="text-white font-medium">Total Discretion:</span> Encrypted communication. All data deleted post-engagement.</li>
+          <li><span class="text-white font-medium">Personalized Matching:</span> Each inquiry receives a private consultation & match by personality + occasion.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Closing Statement -->
+    <div class="text-center max-w-2xl mx-auto pt-12">
+      <p class="text-lg text-zinc-300">
+        Monika Escort exists not just to facilitate a meeting, but to <span class="text-white font-semibold">create an experience</span>.
+        With emotional resonance at the core, our service is not only <span class="text-pink-400 font-medium">safe and professional</span>—
+        it’s <span class="italic">deeply human</span>.
+      </p>
+    </div>
+
+    <!-- CTA Button -->
+    <div class="text-center pt-10">
+      <a href="#consultation" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-semibold px-8 py-3 rounded-full shadow-lg transition">
+        💌 Request a Private Consultation
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-zinc-950 text-white py-16 px-6 md:px-12 lg:px-24">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12 text-pink-500">Meet Our Companions</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Companion Profiles -->
+      <!-- 1 -->
+      <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+        <img src="https://source.unsplash.com/400x500/?woman,model&sig=1" class="w-full h-72 object-cover" alt="Rhea">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold">Rhea, 26</h3>
+          <p class="text-sm text-zinc-300">Elegant | Fluent in English | Banjara Hills</p>
+          <div class="flex gap-2 pt-3">
+            <a href="tel:+919911223344" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+            <a href="https://wa.me/919911223344" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+        <img src="https://source.unsplash.com/400x500/?woman,model&sig=2" class="w-full h-72 object-cover" alt="Zara">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold">Zara, 25</h3>
+          <p class="text-sm text-zinc-300">MBA Grad | Charismatic | Jubilee Hills</p>
+          <div class="flex gap-2 pt-3">
+            <a href="tel:+919922334455" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+            <a href="https://wa.me/919922334455" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+        <img src="https://source.unsplash.com/400x500/?woman,model&sig=3" class="w-full h-72 object-cover" alt="Simran">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold">Simran, 28</h3>
+          <p class="text-sm text-zinc-300">Soft-Spoken | Telugu & English | Hitech City</p>
+          <div class="flex gap-2 pt-3">
+            <a href="tel:+919933445566" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+            <a href="https://wa.me/919933445566" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+        <img src="https://source.unsplash.com/400x500/?woman,model&sig=4" class="w-full h-72 object-cover" alt="Anaya">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold">Anaya, 24</h3>
+          <p class="text-sm text-zinc-300">Witty | French Learner | Gachibowli</p>
+          <div class="flex gap-2 pt-3">
+            <a href="tel:+919944556677" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+            <a href="https://wa.me/919944556677" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+        <img src="https://source.unsplash.com/400x500/?woman,model&sig=5" class="w-full h-72 object-cover" alt="Kiara">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold">Kiara, 27</h3>
+          <p class="text-sm text-zinc-300">Bold | Yoga Enthusiast | Necklace Road</p>
+          <div class="flex gap-2 pt-3">
+            <a href="tel:+919955667788" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+            <a href="https://wa.me/919955667788" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+<!-- 6 -->
+<div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+  <img src="https://source.unsplash.com/400x500/?woman,model&sig=6" class="w-full h-72 object-cover" alt="Sana">
+  <div class="p-5 space-y-3">
+    <h3 class="text-xl font-semibold">Sana, 23</h3>
+    <p class="text-sm text-zinc-300">Introvert | Book Lover | Madhapur</p>
+    <div class="flex gap-2 pt-3">
+      <a href="tel:+919966778899" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+      <a href="https://wa.me/919966778899" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- 7 -->
+<div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+  <img src="https://source.unsplash.com/400x500/?woman,model&sig=7" class="w-full h-72 object-cover" alt="Ishita">
+  <div class="p-5 space-y-3">
+    <h3 class="text-xl font-semibold">Ishita, 30</h3>
+    <p class="text-sm text-zinc-300">Mature | Multilingual | Film Nagar</p>
+    <div class="flex gap-2 pt-3">
+      <a href="tel:+919977889900" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+      <a href="https://wa.me/919977889900" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+  <img src="https://source.unsplash.com/400x500/?woman,model&sig=8" class="w-full h-72 object-cover" alt="Naira">
+  <div class="p-5 space-y-3">
+    <h3 class="text-xl font-semibold">Naira, 22</h3>
+    <p class="text-sm text-zinc-300">Charming | Loves Dance | KBR Park Area</p>
+    <div class="flex gap-2 pt-3">
+      <a href="tel:+919988001122" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+      <a href="https://wa.me/919988001122" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+  <img src="https://source.unsplash.com/400x500/?woman,model&sig=9" class="w-full h-72 object-cover" alt="Tanya">
+  <div class="p-5 space-y-3">
+    <h3 class="text-xl font-semibold">Tanya, 29</h3>
+    <p class="text-sm text-zinc-300">Stylish | Music Buff | Secunderabad</p>
+    <div class="flex gap-2 pt-3">
+      <a href="tel:+919999112233" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+      <a href="https://wa.me/919999112233" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+  <img src="https://source.unsplash.com/400x500/?woman,model&sig=10" class="w-full h-72 object-cover" alt="Meher">
+  <div class="p-5 space-y-3">
+    <h3 class="text-xl font-semibold">Meher, 26</h3>
+    <p class="text-sm text-zinc-300">Graceful | Loves Poetry | Tarnaka</p>
+    <div class="flex gap-2 pt-3">
+      <a href="tel:+919988223344" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+      <a href="https://wa.me/919988223344" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- 11 -->
+<div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+  <img src="https://source.unsplash.com/400x500/?woman,model&sig=11" class="w-full h-72 object-cover" alt="Alina">
+  <div class="p-5 space-y-3">
+    <h3 class="text-xl font-semibold">Alina, 31</h3>
+    <p class="text-sm text-zinc-300">Art Collector | Cosmopolitan | Banjara Hills</p>
+    <div class="flex gap-2 pt-3">
+      <a href="tel:+919977334455" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+      <a href="https://wa.me/919977334455" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- 12 -->
+<div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+  <img src="https://source.unsplash.com/400x500/?woman,model&sig=12" class="w-full h-72 object-cover" alt="Vanya">
+  <div class="p-5 space-y-3">
+    <h3 class="text-xl font-semibold">Vanya, 27</h3>
+    <p class="text-sm text-zinc-300">Bubbly | Travel Junkie | Charminar</p>
+    <div class="flex gap-2 pt-3">
+      <a href="tel:+919966445577" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+      <a href="https://wa.me/919966445577" class="flex-1 bg-green-500 hover:bg-green-600 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+<section class="bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 py-20 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Image or Founder Portrait -->
+    <div class="relative">
+      <img src="./photos/monika-founder.webp" alt="Monika Founder" class="rounded-3xl shadow-2xl w-full h-auto object-cover">
+      <div class="absolute -bottom-6 -right-6 bg-purple-600 text-white px-4 py-2 text-sm font-medium rounded-full shadow-lg">
+        Founder & Visionary
+      </div>
+    </div>
+
+    <!-- Textual Ethos -->
+    <div class="space-y-6 text-gray-800">
+      <h2 class="text-4xl font-bold text-purple-700 leading-tight">Meet Monika – Founder & Ethos</h2>
+      <p class="text-lg italic text-purple-600 border-l-4 border-purple-400 pl-4">
+        “I started Monika Escort because I couldn’t find a space where safety, emotional intelligence, and true companionship coexisted. I wanted to create a service where trust isn’t just promised—it’s lived.” — Monika, Founder
+      </p>
+      <p>
+        With over 12 years of experience in luxury hospitality, guest relations, and women-led entrepreneurship, Monika has reimagined companionship in Hyderabad. Her background working with elite clientele in five-star hotels inspired a platform built not on transactions—but on emotional resonance.
+      </p>
+      <p>
+        Every companion is interviewed and trained personally by Monika’s team. Each interaction is respectful, legal, emotionally intelligent, and held to the highest standard of privacy.
+      </p>
+      <p class="font-medium text-purple-700">
+        Monika Escort isn’t just her business. It’s her mission.
+      </p>
+      <a href="#consultation" class="inline-block mt-4 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full shadow-md transition">Request a Private Consultation</a>
+    </div>
+
+  </div>
+</section>
+<section class="bg-white py-24 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto space-y-16">
+
+    <!-- Section Heading -->
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-purple-700 mb-4">How It Works – A Transparent, Respectful Process</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        Your journey with Monika Escort begins not with an anonymous form, but with a conversation. We believe that meaningful connections require clarity and comfort from the very beginning. Our process reflects that.
+      </p>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid md:grid-cols-2 gap-12">
+      
+      <!-- Step 1 -->
+      <div class="bg-purple-50 p-6 rounded-3xl shadow-lg space-y-3">
+        <h3 class="text-xl font-semibold text-purple-800">Step 1: Submit a Confidential Inquiry</h3>
+        <p class="text-gray-600">Visit our secure portal and share your preferences, goals, and any context for your desired companionship. Whether you’re attending a business event or seeking emotional connection, we listen deeply.</p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="bg-pink-50 p-6 rounded-3xl shadow-lg space-y-3">
+        <h3 class="text-xl font-semibold text-pink-800">Step 2: Personalized Companion Matching</h3>
+        <p class="text-gray-600">We carefully match you based on emotional resonance, interests, and availability—not just appearance. You receive curated suggestions aligned with your comfort and energy.</p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="bg-blue-50 p-6 rounded-3xl shadow-lg space-y-3">
+        <h3 class="text-xl font-semibold text-blue-800">Step 3: Live Video Introduction (Optional)</h3>
+        <p class="text-gray-600">For added reassurance, we offer optional one-way video introductions. You meet the companion on camera—they won’t see you unless you choose. A space to ask light questions and confirm rapport.</p>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="bg-purple-100 p-6 rounded-3xl shadow-lg space-y-3">
+        <h3 class="text-xl font-semibold text-purple-800">Step 4: Safe, Public Meet-up</h3>
+        <p class="text-gray-600">Your first engagement happens in a vetted public space—like a luxury cafe or hotel lounge. Comfort and safety come first, for you and your companion.</p>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="bg-pink-100 p-6 rounded-3xl shadow-lg space-y-3 md:col-span-2">
+        <h3 class="text-xl font-semibold text-pink-800">Step 5: Share a Genuine Experience</h3>
+        <p class="text-gray-600">Our companions are thoughtful, respectful, and emotionally present. They are not performers, but real people offering meaningful connection and conversation—always with clear boundaries and professionalism.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="bg-gradient-to-br from-purple-50 to-blue-50 py-24 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto space-y-16">
+
+    <!-- Section Header -->
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-purple-700 mb-4">Neighborhoods We Serve – Hyderabad’s Finest Locales</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        We operate across Hyderabad’s most iconic and reputable districts. Each location offers its own flavor of experience:
+      </p>
+    </div>
+
+    <!-- Location Grid -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-purple-400">
+        <h3 class="text-xl font-semibold text-purple-700">Banjara Hills</h3>
+        <p class="text-sm text-gray-600">Sophistication meets serenity—perfect for gallery visits and elite dinners.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-blue-400">
+        <h3 class="text-xl font-semibold text-blue-700">Hitech City</h3>
+        <p class="text-sm text-gray-600">Tech hub with luxury hotels—ideal for business travelers seeking comfort.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-pink-400">
+        <h3 class="text-xl font-semibold text-pink-700">Jubilee Hills</h3>
+        <p class="text-sm text-gray-600">Trendy lounges and cafes—great for stylish, low-key meetups.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-indigo-400">
+        <h3 class="text-xl font-semibold text-indigo-700">Necklace Road</h3>
+        <p class="text-sm text-gray-600">Lakeside romance and peaceful walks in a scenic setting.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-emerald-400">
+        <h3 class="text-xl font-semibold text-emerald-700">Gachibowli</h3>
+        <p class="text-sm text-gray-600">Startup energy and global vibes—perfect for brunch and chats.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-red-400">
+        <h3 class="text-xl font-semibold text-red-700">Madhapur</h3>
+        <p class="text-sm text-gray-600">Youthful spirit meets great nightlife and creative spaces.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-teal-400">
+        <h3 class="text-xl font-semibold text-teal-700">Begumpet</h3>
+        <p class="text-sm text-gray-600">Centrally located with classic charm and upscale spots.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-amber-400">
+        <h3 class="text-xl font-semibold text-amber-700">Kondapur</h3>
+        <p class="text-sm text-gray-600">Relaxed yet refined—ideal for casual connections.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-rose-400">
+        <h3 class="text-xl font-semibold text-rose-700">Lakdikapul</h3>
+        <p class="text-sm text-gray-600">Cultural charm and easy access to city’s core destinations.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-lime-400">
+        <h3 class="text-xl font-semibold text-lime-700">Charminar</h3>
+        <p class="text-sm text-gray-600">Rich heritage and deep conversations under historical skies.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-fuchsia-400">
+        <h3 class="text-xl font-semibold text-fuchsia-700">Somajiguda</h3>
+        <p class="text-sm text-gray-600">High-rise views and professional grace—ideal for conferences.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-cyan-400">
+        <h3 class="text-xl font-semibold text-cyan-700">Secunderabad</h3>
+        <p class="text-sm text-gray-600">Old-world elegance mixed with upscale modern cafés.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-violet-400">
+        <h3 class="text-xl font-semibold text-violet-700">Kukatpally</h3>
+        <p class="text-sm text-gray-600">Perfect for late night drives and casual companionship vibes.</p>
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-md p-6 border-l-4 border-sky-400">
+        <h3 class="text-xl font-semibold text-sky-700">Himayatnagar</h3>
+        <p class="text-sm text-gray-600">Bookshops, cafés, and college vibes—quiet and thoughtful dates.</p>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <div class="text-center">
+      <a href="#locations" class="inline-block mt-10 px-8 py-3 bg-purple-600 text-white font-semibold rounded-full shadow-md hover:bg-purple-700 transition">
+        Explore Locations in Depth
+      </a>
+    </div>
+
+  </div>
+</section>
+<section class="bg-white py-24 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto space-y-16">
+    <!-- Section Heading -->
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-purple-700 mb-4">What Our Clients Say</h2>
+      <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+        Human moments, honestly shared. Words from those who’ve experienced companionship beyond expectations.
+      </p>
+    </div>
+
+    <!-- Testimonials Grid -->
+    <div class="grid md:grid-cols-3 gap-10">
+      <!-- Testimonial 1 -->
+      <div class="bg-purple-50 p-6 rounded-3xl shadow-xl border-l-4 border-purple-400">
+        <p class="text-sm text-gray-700 italic leading-relaxed">
+          “I met <span class="font-semibold text-purple-600">N.</span> through Monika Escort for a formal dinner in Jubilee Hills.
+          She wasn’t just elegant—she was curious, emotionally aware, and an incredible listener. 
+          That evening shifted something in me.”
+        </p>
+        <p class="mt-4 text-xs text-gray-500 text-right">— R., Educator</p>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-blue-50 p-6 rounded-3xl shadow-xl border-l-4 border-blue-400">
+        <p class="text-sm text-gray-700 italic leading-relaxed">
+          “As a visiting investor from Singapore, I needed a companion for two tech events. 
+          Not only was <span class="font-semibold text-blue-600">A.</span> on-time and elegantly dressed, 
+          she understood the context and made my interactions effortless. Professional beyond expectation.”
+        </p>
+        <p class="mt-4 text-xs text-gray-500 text-right">— T., VC Executive</p>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-pink-50 p-6 rounded-3xl shadow-xl border-l-4 border-pink-400">
+        <p class="text-sm text-gray-700 italic leading-relaxed">
+          “What struck me most was how Monika’s team truly listened. 
+          I wasn’t looking for anything glamorous—just a kind soul to accompany me through a tough season. 
+          I found that in <span class="font-semibold text-pink-600">S.</span> She made me feel human again.”
+        </p>
+        <p class="mt-4 text-xs text-gray-500 text-right">— D., Entrepreneur</p>
+      </div>
+    </div>
+
+    <!-- Privacy Note -->
+    <div class="text-center mt-12 max-w-2xl mx-auto text-sm text-gray-500">
+      <p>
+        Testimonials are anonymous and ethically approved. Names, photos, and venues may be altered to protect privacy—
+        but the sentiment remains untouched.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="bg-gray-50 py-24 px-6 md:px-20">
+  <div class="max-w-6xl mx-auto space-y-12">
+    
+    <!-- Heading -->
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-purple-800 mb-4">Privacy & Safety Commitments</h2>
+      <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+        <em>The Invisible Infrastructure of Trust</em>
+      </p>
+    </div>
+
+    <!-- Content -->
+    <div class="grid md:grid-cols-2 gap-10 text-base text-gray-700">
+      <div class="space-y-4">
+        <div class="bg-white shadow p-6 rounded-2xl border-l-4 border-purple-500">
+          <h4 class="text-lg font-semibold text-purple-600 mb-1">End-to-End Encryption</h4>
+          <p>All communications are encrypted using SSL/TLS standards—ensuring nothing leaks, ever.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded-2xl border-l-4 border-purple-500">
+          <h4 class="text-lg font-semibold text-purple-600 mb-1">No Retention Policy</h4>
+          <p>Data isn’t stored beyond the booking window unless you explicitly opt in. No traces, no worries.</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white shadow p-6 rounded-2xl border-l-4 border-purple-500">
+          <h4 class="text-lg font-semibold text-purple-600 mb-1">Two-Way Verification</h4>
+          <p>Both companions and clients are screened—identification, consent, and behavioral patterns included.</p>
+        </div>
+        <div class="bg-white shadow p-6 rounded-2xl border-l-4 border-purple-500">
+          <h4 class="text-lg font-semibold text-purple-600 mb-1">Defined Boundaries</h4>
+          <p>Every engagement includes a mutual agreement outlining etiquette, expectations, and cancellations.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center pt-10">
+      <a href="#privacy-policy" class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-6 py-3 rounded-full shadow transition-transform hover:scale-105">
+        🔒 Learn More About Our Policies
+      </a>
+    </div>
+
+  </div>
+</section>
+<section class="bg-[#1a1423] text-gray-200 py-24 px-6 md:px-20">
+  <div class="max-w-5xl mx-auto space-y-16">
+    
+    <!-- Section Heading -->
+    <div class="text-center">
+      <h2 class="text-4xl font-bold text-purple-300 mb-4">Frequently Asked Questions</h2>
+      <p class="text-lg text-gray-400 italic">Answers whispered in confidence, not broadcast in bold.</p>
+    </div>f
+
+   <!-- FAQ Accordion -->
+<div class="space-y-6" x-data="faqData()">
+      
+      <!-- FAQ Item -->
+      <template x-for="(faq, i) in faqs" :key="i">
+        <div class="border border-purple-700 rounded-xl shadow-md bg-[#251b33]">
+          <button 
+            @click="selected === i ? selected = null : selected = i"
+            class="w-full text-left px-6 py-4 flex justify-between items-center">
+            <h3 class="text-lg font-medium text-purple-100" x-text="faq.q"></h3>
+            <span class="text-purple-300 text-xl" x-text="selected === i ? '-' : '+'"></span>
+          </button>
+          <div 
+            x-show="selected === i" 
+            x-transition 
+            class="px-6 pb-6 text-gray-300 text-sm leading-relaxed"
+            x-text="faq.a">
+          </div>
+        </div>
+      </template>
+
+    </div>
+
+    <!-- Alpine Data -->
+<script>
+  function faqData() {
+    return {
+      selected: null,
+      faqs: [
+        {
+          q: "Is this legal in Hyderabad?",
+          a: "Yes. Monika Escort offers social-only companionship and operates fully within Indian legal frameworks. No sexual services are offered, promoted, or implied."
+        },
+        {
+          q: "What exactly does a companion do?",
+          a: "They accompany you to events, dinners, or social settings and engage in meaningful, platonic conversation. Think of it as professional social presence."
+        },
+        {
+          q: "Can I request a multilingual companion?",
+          a: "Absolutely. Our companions speak English, Hindi, Telugu, and in some cases, international languages such as French or Mandarin."
+        },
+        {
+          q: "How far in advance should I book?",
+          a: "We recommend at least 48 hours' notice, especially for high-demand neighborhoods and events."
+        },
+        {
+          q: "Can I make a recurring booking?",
+          a: "Yes. We support recurring companionship arrangements upon mutual agreement and vetting."
+        },
+        {
+          q: "Do you accommodate accessibility needs?",
+          a: "Yes. Please share your specific requirements during your initial inquiry so we can ensure comfort and inclusion."
+        }
+      ]
+    };
+  }
+</script>
+
+  </div>
+</section>
+<!-- Section 8: Final CTA -->
+<section class="bg-[#10091a] text-white py-20 px-4 md:px-12">
+  <div class="max-w-4xl mx-auto text-center space-y-6">
+    <h2 class="text-3xl md:text-4xl font-bold leading-snug">
+      Companionship Is Not a Transaction.<br class="hidden sm:block" />
+      <span class="text-purple-400">It’s a Trust Agreement.</span>
+    </h2>
+    <p class="text-gray-300 text-lg max-w-2xl mx-auto">
+      If you’re seeking connection, clarity, and elegance in your companionship experience—Monika Escort is here.
+    </p>
+    <p class="text-gray-400">
+      Whether you’re navigating a new city, attending a high-profile event, or simply wish to be understood, we offer more than presence. We offer meaningful connection.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="flex flex-wrap justify-center gap-4 mt-8">
+      <a href="#consultation" class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full shadow-md transition">
+        Book a Private Consultation
+      </a>
+      <a href="#how-it-works" class="border border-gray-600 hover:border-white text-white px-6 py-3 rounded-full transition">
+        Learn How It Works
+      </a>
+      <a href="#founder" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-full shadow-md transition">
+        Meet the Founder
+      </a>
+      <a href="#testimonials" class="text-white border border-purple-500 hover:bg-purple-500 px-6 py-3 rounded-full transition">
+        Read Client Experiences
+      </a>
+    </div>
+
+    <!-- Final Message -->
+    <div class="mt-12 border-t border-gray-700 pt-6 text-gray-400 text-sm leading-relaxed max-w-xl mx-auto">
+      <p>
+        At Monika Escort, we believe companionship should feel safe, elegant, and emotionally nourishing.
+        Since 2021, we’ve remained Hyderabad’s trusted choice for social-only, verified companion experiences—rooted in respect, privacy, and real human connection.
+      </p>
+      <p class="mt-4 italic">Whether you're planning ahead or simply curious, we welcome you to reach out with openness and confidence. <strong>Your story begins with trust.</strong></p>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0c0812] text-gray-400 py-12 px-6 md:px-12">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-white text-lg font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        <li><a href="/" class="hover:text-pink-500 transition">Privacy Policy</a></li>
+        <li><a href="/" class="hover:text-pink-500 transition">How It Works</a></li>
+        <li><a href="/" class="hover:text-pink-500 transition">FAQs</a></li>
+        <li><a href="/" class="hover:text-pink-500 transition">Client Stories</a></li>
+      </ul>
+    </div>
+
+    <!-- Trust Badges -->
+    <div>
+      <h3 class="text-white text-lg font-semibold mb-4">Trust & Safety</h3>
+      <ul class="space-y-2">
+        <li>🔒 SSL Secure</li>
+        <li>✅ Identity Verified</li>
+        <li>🛡️ Lawfully Verified Engagements</li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h3 class="text-white text-lg font-semibold mb-4">Contact</h3>
+      <p>Email: <a href="mailto:jannatkhana247@gmail.com" class="hover:text-pink-500">jannatkhana247@gmail.com</a></p>
+      <p>Phone: <a href="tel:+919748355971" class="hover:text-pink-500">+91 9748355971</a></p>
+    </div>
+  </div>
+
+  <!-- Compliance Note -->
+  <div class="border-t border-gray-700 mt-10 pt-6 text-xs text-center max-w-4xl mx-auto">
+    <p class="text-gray-500 italic">
+      Monika Escort provides only lawful, non-sexual social companionship services in accordance with Indian legal standards.
+      We prioritize safety, dignity, and mutual respect at every step.
+    </p>
+    <p class="text-gray-600 mt-2">&copy; 2021–2025 Monika Escort. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
