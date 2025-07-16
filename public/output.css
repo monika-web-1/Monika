@@ -1247,6 +1247,13 @@
       }
     }
   }
+  .hover\:text-pink-700 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-pink-700);
+      }
+    }
+  }
   .hover\:text-pink-800 {
     &:hover {
       @media (hover: hover) {
