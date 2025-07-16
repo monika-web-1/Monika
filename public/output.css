@@ -375,6 +375,9 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-80 {
+    height: calc(var(--spacing) * 80);
+  }
   .h-auto {
     height: auto;
   }
