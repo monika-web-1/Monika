@@ -5,6 +5,10 @@
   },
   "scripts": {
     "build": "tailwindcss -i ./input.css -o ./public/output.css",
-    "dev": "npm run build"
+    "dev": "npm run build",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
   }
 }
