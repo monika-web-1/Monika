@@ -160,7 +160,7 @@
         </div>
       </nav>
     </header>
-<section class="bg-zinc-950 text-white py-20 px-6 lg:px-20">
+    <section class="bg-zinc-950 text-white py-20 px-6 lg:px-20">
   <div class="max-w-7xl mx-auto">
     <!-- Profile Card -->
     <div class="relative group grid grid-cols-1 md:grid-cols-3 gap-10 bg-zinc-900 rounded-3xl overflow-hidden shadow-2xl transition-transform hover:scale-[1.01]">
@@ -238,10 +238,10 @@
       Monika Escort provides companionship for social purposes only. We strictly follow local laws under the Immoral Traffic (Prevention) Act. All bookings require identity verification and agreement to our conduct policies.
     </p>
   </div>
-</section>
+    </section>
 
-<!-- Escort Profile Cards Grid Section -->
-<section class="bg-black text-white py-24 px-6 lg:px-20">
+    <!-- Escort Profile Cards Grid Section -->
+    <section class="bg-black text-white py-24 px-6 lg:px-20">
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-12">
 
     <!-- Profile Card: Anika -->
@@ -308,14 +308,71 @@
     <!-- Add More Profiles Here -->
 
   </div>
+    </section>
+<!-- Escort Profile Cards Grid Section with Alpine.js Modals -->
+<section class="bg-black text-white pt-28 pb-24 px-6 lg:px-20" x-data="{ activeModal: null }">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+
+    <!-- Profile Card: Rhea -->
+    <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800 shadow-md hover:shadow-pink-500/20 transition">
+      <img loading="lazy" src="./Images/image (100).webp" class="w-full h-120 object-cover" alt="Rhea" />
+      <div class="p-5 space-y-3">
+        <h3 class="text-xl font-semibold">Rhea, 20</h3>
+        <p class="text-sm text-zinc-300">Elegant | Fluent in English | Banjara Hills</p>
+        <div class="flex gap-2 pt-3">
+          <a href="tel:+919099834592" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">Call</a>
+          <a href="https://api.whatsapp.com/send/?phone=919099834592&text=Hi%2C+I+have+visited+your+site+Monika+Escort+I+want+a+call+girl+with+cash+payment+in+bangalore.&type=phone_number&app_absent=0" class="flex-1 bg-green-700 hover:bg-green-800 text-white py-2 rounded-full text-sm text-center">WhatsApp</a>
+        </div>
+        <button @click="activeModal = 'rhea'" class="w-full mt-3 bg-zinc-800 hover:bg-zinc-700 text-white py-2 rounded-full text-sm">👁️ Quick View</button>
+      </div>
+    </div>
+
+    <!-- Modal: Rhea -->
+    <div x-show="activeModal === 'rhea'" class="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4 overflow-y-auto" x-transition>
+      <div class="bg-zinc-900 max-w-4xl w-full rounded-xl overflow-hidden shadow-2xl relative flex flex-col mt-10 md:mt-0" @click.away="activeModal = null">
+        <button @click="activeModal = null" class="absolute top-4 right-4 text-white text-3xl z-50">&times;</button>
+        <div class="grid md:grid-cols-2 gap-6 p-6 overflow-y-auto max-h-[90vh]">
+          <!-- Slider -->
+          <div x-data="{ imgIndex: 0, imgs: ['./Images/image (100).webp', './Images/image (99).webp'] }" class="relative w-full">
+            <div class="relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+              <template x-for="(img, i) in imgs" :key="i">
+                <img :src="img" x-show="imgIndex === i" class="object-cover w-full h-full transition-all duration-500 absolute inset-0" x-transition:enter="transition-opacity duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
+              </template>
+              <button @click="imgIndex = (imgIndex - 1 + imgs.length) % imgs.length" class="absolute left-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-full z-10">‹</button>
+              <button @click="imgIndex = (imgIndex + 1) % imgs.length" class="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-full z-10">›</button>
+            </div>
+          </div>
+
+          <!-- Details -->
+          <div class="space-y-4">
+            <h3 class="text-2xl font-bold text-pink-500">Rhea, 20 — Verified ✅</h3>
+            <p class="text-sm text-zinc-300">Graceful | Bookstore dates | Mindful talker | Based in Banjara Hills</p>
+            <p class="text-zinc-400 text-sm">
+              "Hi, I’m Rhea. I enjoy mindful conversations, music nights, and a good book over chai. Comfortable in upscale lounges or art cafes."
+            </p>
+            <ul class="text-sm text-pink-400 space-y-1">
+              <li>💼 Business Meetings</li>
+              <li>🍸 Lounge Evenings</li>
+              <li>📚 Bookstore Dates</li>
+              <li>🪷 Mindful Conversations</li>
+            </ul>
+            <div class="flex gap-2 pt-3">
+              <a href="tel:+919099834592" class="flex-1 bg-pink-600 hover:bg-pink-700 text-white py-2 rounded-full text-sm text-center">📞 Call Now</a>
+              <a href="https://api.whatsapp.com/send/?phone=919099834592" class="flex-1 bg-green-700 hover:bg-green-800 text-white py-2 rounded-full text-sm text-center">💬 WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
 
-<script>
+    <script>
 function toggleDetails(id) {
   const panel = document.getElementById(id);
   panel.classList.toggle('hidden');
 }
-</script>
-
+   </script>
   </body>
   </html>
