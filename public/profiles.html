@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="canonical" href="https://www.monikabansalescorts.com/profiles.html" />
-    <link
-      rel="preload"
-      href="./output.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="./output.css" /></noscript>
+    <link rel="stylesheet" href="./output.css" />
     <!-- Alpine.js -->
     <script src="//unpkg.com/alpinejs" defer></script>
     <!-- Meta Tags for Homepage -->
@@ -338,8 +332,8 @@
               <template x-for="(img, i) in imgs" :key="i">
                 <img :src="img" x-show="imgIndex === i" class="object-cover w-full h-full transition-all duration-500 absolute inset-0" x-transition:enter="transition-opacity duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition-opacity duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
               </template>
-              <button @click="imgIndex = (imgIndex - 1 + imgs.length) % imgs.length" class="absolute left-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-full z-10">‹</button>
-              <button @click="imgIndex = (imgIndex + 1) % imgs.length" class="absolute right-2 top-1/2 -translate-y-1/2 bg-pink-600 hover:bg-pink-700 text-white px-3 py-2 rounded-full z-10">›</button>
+              <button @click="imgIndex = (imgIndex - 1 + imgs.length) % imgs.length" class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-white/30 backdrop-blur-xl text-white px-3 py-2 rounded-full z-10">‹</button>
+              <button @click="imgIndex = (imgIndex + 1) % imgs.length" class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-white/30 backdrop-blur-xl text-white px-3 py-2 rounded-full z-10">›</button>
             </div>
           </div>
 
